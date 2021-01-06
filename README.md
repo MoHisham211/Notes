@@ -5,6 +5,7 @@ Notes is a simple note taking Android app that lets you display your notes using
 - AsyncTask
 - RoomDatabase
 - MVVM design pattern
+
 ![Screenshot_1609943766](https://user-images.githubusercontent.com/62261376/103780298-7b7dc800-503d-11eb-8f3b-ae45d1b566c3.png)
 ![Screenshot_1609943684](https://user-images.githubusercontent.com/62261376/103780321-80db1280-503d-11eb-8369-903c7d568b09.png)
 ![Screenshot_1609943692](https://user-images.githubusercontent.com/62261376/103780351-89cbe400-503d-11eb-8b8d-17c344bc51f5.png)
