@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_500"
+        android:orientation="vertical"
+        tools:context=".activities.DrawingActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/newBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/start_new"
+                app:srcCompat="@drawable/ic_add_file"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageButton
+                android:id="@+id/drawBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/brush"
+                app:srcCompat="@drawable/ic_paint_brush" />
+
+            <ImageButton
+                android:id="@+id/eraseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/erase"
+                app:srcCompat="@drawable/ic_eraser_tool" />
+
+            <ImageButton
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/save"
+                app:srcCompat="@drawable/ic_save_disk" />
+        </LinearLayout>
+
+        <mo.zain.notes.drawing.DrawingView
+            android:id="@+id/drawing"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="#ffffffff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <!-- top row =-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/paint_colors"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:background="#ff660000"
+                    android:contentDescription="@string/paint"
+                    android:tag="#ff660000"
+                    android:onClick="paintClicked"
+                    app:srcCompat="@drawable/paint" />
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:background="#ffff0000"
+                    android:contentDescription="@string/paint"
+                    android:tag="#ffff0000"
+                    android:onClick="paintClicked"
+                    app:srcCompat="@drawable/paint" />
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:background="#ffff6600"
+                    android:contentDescription="@string/paint"
+                    android:tag="#ffff6600"
+                    android:onClick="paintClicked"
+                    app:srcCompat="@drawable/paint" />
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:background="#ffffcc00"
+                    android:contentDescription="@string/paint"
+                    android:tag="#ffffcc00"
+                    android:onClick="paintClicked"
+                    app:srcCompat="@drawable/paint" />
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:background="#ff009900"
+                    android:contentDescription="@string/paint"
+                    android:tag="#ff009900"
+                    android:onClick="paintClicked"
+                    app:srcCompat="@drawable/paint" />
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:background="#ff009999"
+                    android:contentDescription="@string/paint"
+                    android:tag="#ff009999"
+                    android:onClick="paintClicked"
+                    app:srcCompat="@drawable/paint" />
+
+            </LinearLayout>
+
+            <!-- bottom row =-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton15"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#ff000000"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:tag="#ff000000"
+                    app:srcCompat="@drawable/paint" />
+
+                <ImageButton
+                    android:id="@+id/imageButton13"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#ffffffff"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:tag="#ffffffff"
+                    app:srcCompat="@drawable/paint" />
+
+                <ImageButton
+                    android:id="@+id/imageButton14"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#ff787878"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:tag="#ff787878"
+                    app:srcCompat="@drawable/paint" />
+
+                <ImageButton
+                    android:id="@+id/imageButton12"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#ffff6666"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:tag="#ffff6666"
+                    app:srcCompat="@drawable/paint" />
+
+                <ImageButton
+                    android:id="@+id/imageButton11"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#ff990099"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:tag="#ff990099"
+                    app:srcCompat="@drawable/paint" />
+
+                <ImageButton
+                    android:id="@+id/imageButton10"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#ff0000ff"
+                    android:contentDescription="@string/paint"
+                    android:onClick="paintClicked"
+                    android:tag="#ff0000ff"
+                    app:srcCompat="@drawable/paint" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>

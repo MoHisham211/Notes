@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="small_brush" tools:ignore="MissingDefaultResource">10dp</dimen>
+    <integer name="small_size">10</integer>
+    <dimen name="medium_brush" tools:ignore="MissingDefaultResource">20dp</dimen>
+    <integer name="medium_size">20</integer>
+    <dimen name="large_brush" tools:ignore="MissingDefaultResource">30dp</dimen>
+    <integer name="large_size">30</integer>
+</resources>
